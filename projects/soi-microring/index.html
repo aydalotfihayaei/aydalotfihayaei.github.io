@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Reproducible SOI add-drop microring resonator project by Ayda Lotfi Hayaei, including convergence checks, dispersion analysis, coupling characterization, and resonance metrics." name="description"/><meta content="light dark" name="color-scheme"/><meta content="#f5f8fc" media="(prefers-color-scheme: light)" name="theme-color"/><meta content="#07111f" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script>(function(){document.documentElement.classList.add('js');try{var s=localStorage.getItem('ayda-theme');var d=s||'light';document.documentElement.dataset.theme=d;}catch(e){}})();</script><link href="/assets/css/main.css" rel="stylesheet"/>
+<title>SOI Add-Drop Microring Resonator | Ayda Lotfi Hayaei</title>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/favicon.ico" rel="icon" sizes="any"/></head>
+<body class="home-v3 subpage-v4 project-detail-v4" id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" data-site-header="">
+<div class="site-header__inner">
+<a aria-label="Ayda Lotfi Hayaei home" class="site-brand" href="/">
+<span aria-hidden="true" class="site-brand__mark"><span></span></span>
+<span class="site-brand__text">Ayda Lotfi Hayaei</span>
+</a>
+<nav aria-label="Primary navigation" class="site-nav" data-site-nav="" id="primary-navigation">
+<ul class="site-nav__list">
+<li><a class="site-nav__link" href="/">Home</a></li>
+<li><a class="site-nav__link" href="/research/">Research</a></li>
+<li><a aria-current="page" class="site-nav__link" href="/projects/">Projects</a></li>
+<li><a class="site-nav__link" href="/publications/">Publications</a></li>
+<li><a class="site-nav__link" href="/cv/">CV</a></li>
+<li><a class="site-nav__link" href="/contact/">Contact</a></li>
+</ul>
+</nav>
+<div class="site-header__controls">
+<button aria-label="Search this website" class="header-search-button" data-search-open="" title="Search" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.2 4.2"></path></svg>
+</button>
+<button aria-label="Switch color theme" class="icon-button theme-toggle" data-theme-toggle="" title="Switch color theme" type="button">
+<span class="theme-toggle__sun"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></span>
+<span class="theme-toggle__moon"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.2 15.3A8.5 8.5 0 0 1 8.7 3.8 8.6 8.6 0 1 0 20.2 15.3Z"></path></svg></span>
+</button>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="icon-button nav-toggle" data-nav-toggle="" title="Menu" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</div>
+</div>
+</header>
+<main class="subpage-main-v4 project-page" id="main-content"><section aria-labelledby="v4-page-title" class="v4-subhero">
+<div aria-hidden="true" class="v4-subhero__field"></div>
+<div class="v4-subhero__inner">
+<div class="v4-subhero__copy">
+<p class="v3-status"><span aria-hidden="true"></span>Computational Integrated Photonics Project</p>
+<h1 id="v4-page-title">Reproducible SOI Add-Drop Microring Resonator</h1>
+<p class="v4-subhero__lead">A reproducible computational workflow progressing from a converged SOI strip-waveguide model to dispersion analysis, bend-radius characterization, coupling-gap pre-screening, and a complete symmetric add-drop microring simulation.</p>
+<div class="v3-actions"><a class="v3-button v3-button--primary" href="https://github.com/aydalotfihayaei/reproducible-soi-microring" rel="noopener noreferrer" target="_blank">View GitHub Repository<span aria-hidden="true">→</span></a><a class="v3-button" href="/projects/">Back to Projects<span aria-hidden="true">→</span></a></div>
+</div>
+<div class="v4-subhero__visual v4-visual-project">
+<div class="v4-visual-frame v4-microring-panel"><img alt="Technical schematic of the selected symmetric SOI add-drop microring; R 10 micrometers and physical gap 200 nanometers; not to scale" src="/assets/generated/v5/microring-technical.svg"/><div class="v4-visual-badges"><span>R = 10 µm</span><span>gap = 200 nm</span><span>MODE / varFDTD</span></div></div>
+</div>
+</div>
+</section><section aria-label="Page overview" class="v4-page-metrics v5-page-metrics"><div class="v3-metrics__inner"><article><span aria-hidden="true" class="v3-metric-icon">01</span><div><strong>Platform</strong><span>SOI</span><small>400 × 180 nm waveguide</small></div></article><article><span aria-hidden="true" class="v3-metric-icon">02</span><div><strong>Solver</strong><span>MODE / varFDTD</span><small>Ansys Lumerical</small></div></article><article><span aria-hidden="true" class="v3-metric-icon">03</span><div><strong>Automation</strong><span>Python / lumapi</span><small>Reproducible workflow</small></div></article><article><span aria-hidden="true" class="v3-metric-icon">04</span><div><strong>Wavelength</strong><span>1500–1600 nm</span><small>4001 final samples</small></div></article></div></section>
+<section aria-labelledby="project-overview-title" class="project-overview" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Project Overview
+          </p>
+<h2 id="project-overview-title">
+            From waveguide physics to a complete resonator model
+          </h2>
+</div>
+<div class="project-overview__content">
+<p>
+            The project begins with an SOI strip-waveguide baseline and
+            progressively builds the numerical evidence required for the
+            final microring model. Intermediate stages characterize modal
+            behavior, wavelength dispersion, bend-radius behavior, and
+            coupling as a function of physical separation.
+          </p>
+<p>
+            The final design is a symmetric add-drop ring simulated with
+            the MODE varFDTD solver. Python automation through lumapi is
+            used to support reproducible model construction, execution,
+            data extraction, and analysis.
+          </p>
+</div>
+</div>
+</section>
+<section aria-labelledby="project-design-title" class="project-design" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Final Design Point
+          </p>
+<h2 id="project-design-title">
+            Device and simulation parameters
+          </h2>
+</div>
+<dl class="project-specs">
+<div class="project-spec">
+<dt>Silicon waveguide</dt>
+<dd>400 nm × 180 nm</dd>
+</div>
+<div class="project-spec">
+<dt>Ring centerline radius</dt>
+<dd>10 µm</dd>
+</div>
+<div class="project-spec">
+<dt>Physical ring–bus gap</dt>
+<dd>200 nm</dd>
+</div>
+<div class="project-spec">
+<dt>Architecture</dt>
+<dd>Symmetric add-drop ring, Lc = 0</dd>
+</div>
+<div class="project-spec">
+<dt>Wavelength range</dt>
+<dd>1500–1600 nm</dd>
+</div>
+<div class="project-spec">
+<dt>Coupling-region mesh</dt>
+<dd>15 nm × 7.5 nm</dd>
+</div>
+<div class="project-spec">
+<dt>Spectrum samples</dt>
+<dd>4001</dd>
+</div>
+<div class="project-spec">
+<dt>Time-decay criterion</dt>
+<dd>Auto-shutoff = 1 × 10<sup>−5</sup></dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-labelledby="project-results-title" class="project-results" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Numerical Results
+          </p>
+<h2 id="project-results-title">
+            Final resonance metrics
+          </h2>
+<p class="project-section__intro">
+            Reported values correspond to the final public varFDTD
+            simulation and its extracted resonance dataset.
+          </p>
+</div>
+<dl class="project-results__grid">
+<div class="project-result">
+<dt>Median FSR</dt>
+<dd>8.00455 nm</dd>
+</div>
+<div class="project-result">
+<dt>Mean FSR</dt>
+<dd>8.21387 nm</dd>
+</div>
+<div class="project-result">
+<dt>Median loaded Q</dt>
+<dd>2215.37</dd>
+</div>
+<div class="project-result">
+<dt>Loaded-Q range</dt>
+<dd>853–4614</dd>
+</div>
+<div class="project-result">
+<dt>Median extinction ratio</dt>
+<dd>11.79 dB</dd>
+</div>
+<div class="project-result">
+<dt>Median net-flux balance</dt>
+<dd>0.99751</dd>
+</div>
+</dl>
+</div>
+</section><section aria-labelledby="project-evidence-title" class="v4-project-evidence" data-reveal="">
+<div class="v4-evidence-inner">
+<div class="project-section__heading"><p class="project-section__eyebrow">Result Figures</p><h2 id="project-evidence-title">Selected outputs from the public repository</h2><p class="project-section__intro">These are project-generated result figures from the public reproducibility repository, not decorative reconstructions.</p></div>
+<div class="v4-evidence-grid">
+<figure><img alt="Final net-flux-normalized spectrum of the SOI add-drop microring" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/final_spectrum.png"/><figcaption>Final net-flux-normalized spectrum.</figcaption></figure>
+<figure><img alt="Final numerical convergence comparison for the microring spectrum" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/final_convergence_comparison.png"/><figcaption>Baseline versus refined final-spectrum convergence comparison.</figcaption></figure>
+<figure><img alt="Coupled-supermode effective-index splitting versus physical gap" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/delta_neff_vs_gap.png"/><figcaption>Coupled-supermode index splitting used for gap pre-screening.</figcaption></figure>
+</div>
+<a class="v4-text-link" href="https://github.com/aydalotfihayaei/reproducible-soi-microring/tree/main/figures" rel="noopener noreferrer" target="_blank">Open all repository figures ↗</a>
+</div>
+</section>
+<section aria-labelledby="project-method-title" class="project-method" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Methodology
+          </p>
+<h2 id="project-method-title">
+            Simulation workflow
+          </h2>
+</div>
+<ol class="project-method__steps" role="list">
+<li><img alt="Effective index versus wavelength from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/neff_vs_wavelength.png"/><div class="v5-step-copy"><p class="project-method__number">01</p><div>
+<h3>SOI strip-waveguide baseline</h3>
+<p>
+                Establish the waveguide geometry and characterize the
+                fundamental quasi-TE guided mode.
+              </p>
+</div></div></li>
+<li><img alt="Representative quasi-TE mode field figure from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/mode_field_R10um.png"/><div class="v5-step-copy"><p class="project-method__number">02</p><div>
+<h3>Domain and mesh convergence</h3>
+<p>
+                Check numerical stability before using the waveguide model
+                for subsequent analysis.
+              </p>
+</div></div></li>
+<li><img alt="Dispersion versus wavelength from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/dispersion_vs_wavelength.png"/><div class="v5-step-copy"><p class="project-method__number">03</p><div>
+<h3>Dispersion and group index</h3>
+<p>
+                Evaluate effective index, wavelength dependence, and group
+                index across the operating spectral range.
+              </p>
+</div></div></li>
+<li><img alt="Effective index versus bend radius from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/neff_vs_bend_radius.png"/><div class="v5-step-copy"><p class="project-method__number">04</p><div>
+<h3>Bend-radius characterization</h3>
+<p>
+                Track the guided mode through bent-waveguide models and
+                assess the selected ring-radius region.
+              </p>
+</div></div></li>
+<li><img alt="Coupled-supermode effective-index splitting versus physical gap from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/delta_neff_vs_gap.png"/><div class="v5-step-copy"><p class="project-method__number">05</p><div>
+<h3>Coupling-gap pre-screen</h3>
+<p>
+                Use even- and odd-supermode splitting in a straight
+                two-waveguide system to characterize coupling versus
+                physical separation.
+              </p>
+</div></div></li>
+<li><img alt="Technical schematic of the complete symmetric SOI add-drop microring; not to scale" class="v5-method-visual" loading="lazy" src="/assets/generated/v5/microring-technical.svg"/><div class="v5-step-copy"><p class="project-method__number">06</p><div>
+<h3>Full add-drop microring</h3>
+<p>
+                Build and simulate the complete curved-ring model with
+                MODE varFDTD at the selected design point.
+              </p>
+</div></div></li>
+<li><img alt="Final net-flux-normalized spectrum from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/final_spectrum.png"/><div class="v5-step-copy"><p class="project-method__number">07</p><div>
+<h3>Time-decay and net-flux checks</h3>
+<p>
+                Verify solver termination behavior and inspect
+                net-flux-normalized spectral response.
+              </p>
+</div></div></li>
+<li><img alt="Final baseline-versus-refined convergence comparison from the public project repository" class="v5-method-visual" loading="lazy" src="https://raw.githubusercontent.com/aydalotfihayaei/reproducible-soi-microring/main/figures/final_convergence_comparison.png"/><div class="v5-step-copy"><p class="project-method__number">08</p><div>
+<h3>Mesh and spectral refinement</h3>
+<p>
+                Repeat the final model under refinement checks to quantify
+                changes in resonance and derived metrics.
+              </p>
+</div></div></li>
+<li><img alt="Summary graphic of final extracted resonance metrics using values from the public repository" class="v5-method-visual" loading="lazy" src="/assets/generated/v5/microring-result-summary.svg"/><div class="v5-step-copy"><p class="project-method__number">09</p><div>
+<h3>Resonance extraction</h3>
+<p>
+                Extract resonance wavelengths, free spectral range,
+                loaded Q, and extinction ratio from the final spectrum.
+              </p>
+</div></div></li>
+</ol>
+</div>
+</section>
+<section aria-labelledby="project-validation-title" class="project-validation" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Numerical Validation
+          </p>
+<h2 id="project-validation-title">
+            Explicit convergence evidence
+          </h2>
+<p class="project-section__intro">
+            The repository records explicit project-specific acceptance
+            criteria rather than treating a single unconverged spectrum
+            as the final result.
+          </p>
+</div>
+<div aria-labelledby="project-validation-title" class="project-validation__table-wrapper" role="region" tabindex="0">
+<table class="project-validation__table">
+<caption class="visually-hidden">
+              Numerical validation checks and project-specific acceptance criteria
+            </caption>
+<thead>
+<tr>
+<th scope="col">Check</th>
+<th scope="col">Result</th>
+<th scope="col">Project criterion</th>
+<th scope="col">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Solver termination</th>
+<td>Auto-shutoff</td>
+<td>Must reach auto-shutoff</td>
+<td>Pass</td>
+</tr>
+<tr>
+<th scope="row">Maximum net-flux balance</th>
+<td>1.00015</td>
+<td>≤ 1.01</td>
+<td>Pass</td>
+</tr>
+<tr>
+<th scope="row">FSR relative change</th>
+<td>0.643%</td>
+<td>≤ 1%</td>
+<td>Pass</td>
+</tr>
+<tr>
+<th scope="row">Median resonance shift</th>
+<td>0.0259 nm</td>
+<td>≤ 0.15 nm</td>
+<td>Pass</td>
+</tr>
+<tr>
+<th scope="row">Same-grid median-Q change</th>
+<td>8.78%</td>
+<td>≤ 20%</td>
+<td>Pass</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="project-validation__note">
+          These thresholds are project-specific portfolio convergence
+          criteria and are not presented as universal Ansys accuracy
+          standards.
+        </p>
+</div>
+</section>
+<section aria-labelledby="project-checks-title" class="project-checks" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Intermediate Physics Checks
+          </p>
+<h2 id="project-checks-title">
+            Supporting numerical evidence
+          </h2>
+</div>
+<div class="project-checks__grid">
+<article>
+<h3>Dispersion and group index</h3>
+<p>
+              At 1550 nm, the modeled effective index is
+              1.908883743 and the native group index is 4.538092401.
+              A separately derived group-index value agrees with the
+              native value to a relative difference of approximately
+              1.37 × 10<sup>−5</sup>.
+            </p>
+</article>
+<article>
+<h3>Bend-radius characterization</h3>
+<p>
+              The selected 10 µm radius retained strong modal overlap
+              with the straight-waveguide reference and passed the
+              exterior-field decay screen used in the project.
+            </p>
+</article>
+<article>
+<h3>Coupling-gap pre-screen</h3>
+<p>
+              Even/odd supermode splitting decreased monotonically as
+              physical separation increased. The straight-coupler sweep
+              was used only as a pre-screen; the 200 nm design point was
+              subsequently evaluated in the complete curved-ring model.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="project-reproducibility-title" class="project-reproducibility" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+            Reproducibility
+          </p>
+<h2 id="project-reproducibility-title">
+            Public data and reproducible scripts
+          </h2>
+</div>
+<div class="project-reproducibility__layout">
+<div class="project-reproducibility__content">
+<p>
+              The public repository separates final numerical datasets,
+              curated intermediate results, plotting utilities, model
+              reproduction scripts, and methodology notes.
+            </p>
+<p>
+              Lightweight plots can be regenerated with Python without
+              Ansys Lumerical. Reproducing the final electromagnetic model
+              requires Ansys Lumerical MODE and its Python API.
+            </p>
+<a class="project-reproducibility__link" href="https://github.com/aydalotfihayaei/reproducible-soi-microring">
+              Explore repository files
+            </a>
+</div>
+<ul class="project-repository-structure">
+<li>
+<strong>data/final/</strong>
+              Final spectrum, resonances, and summary data
+            </li>
+<li>
+<strong>data/intermediate/</strong>
+              Curated dispersion, bend, and coupling datasets
+            </li>
+<li>
+<strong>figures/</strong>
+              Portfolio and result figures
+            </li>
+<li>
+<strong>scripts/</strong>
+              Reproduction and plotting scripts
+            </li>
+<li>
+<strong>docs/</strong>
+              Methodology and reproducibility notes
+            </li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="project-limitations-title" class="project-limitations" data-reveal="">
+<div class="project-page__inner project-section">
+<div class="project-limitations__layout">
+<div class="project-section__heading">
+<p class="project-section__eyebrow">
+              Scientific Scope
+            </p>
+<h2 id="project-limitations-title">
+              Limitations and interpretation
+            </h2>
+</div>
+<div class="project-limitations__content">
+<p>
+              The final electromagnetic validation in this release uses
+              MODE varFDTD rather than full 3D FDTD. The reported loaded-Q
+              values should therefore be interpreted as varFDTD estimates
+              for the stated model and convergence settings.
+            </p>
+<p>
+              The project is computational. Fabrication and experimental
+              validation are outside the scope of the current release.
+            </p>
+<p>
+              The 200 nm coupling gap is a validated design point within
+              the reported computational workflow; it is not presented as
+              a global optimum over all possible ring and coupler
+              geometries.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="v3-footer">
+<div class="v3-footer__inner">
+<div class="v3-footer__identity"><span aria-hidden="true" class="site-brand__mark"><span></span></span><p><strong>Ayda Lotfi Hayaei</strong><span>Integrated Photonics · Photonic Sensors · Computational Design</span></p></div>
+<p class="v3-footer__copyright">© 2026 Ayda Lotfi Hayaei. All rights reserved.</p>
+<nav aria-label="Academic profile links" class="v3-footer__links">
+<a href="https://github.com/aydalotfihayaei" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a href="https://orcid.org/0009-0008-3706-7934" rel="noopener noreferrer" target="_blank">ORCID</a>
+<a href="https://scholar.google.com/citations?user=SgECeIUAAAAJ" rel="noopener noreferrer" target="_blank">Google Scholar</a>
+<a href="#top">Back to top ↑</a>
+</nav>
+</div>
+</footer>
+<a aria-label="Back to top" class="floating-top" data-back-to-top="" href="#top" title="Back to top"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m6 15 6-6 6 6"></path><path d="M12 9v11"></path></svg></a><div class="site-search" data-search-modal="" hidden="">
+<button aria-label="Close search" class="site-search__backdrop" data-search-close="" type="button"></button>
+<section aria-labelledby="site-search-title" aria-modal="true" class="site-search__dialog" role="dialog">
+<div class="site-search__head"><h2 id="site-search-title">Search this website</h2><button aria-label="Close search" data-search-close="" type="button">×</button></div>
+<label for="site-search-input">Search pages and topics</label>
+<input autocomplete="off" data-search-input="" id="site-search-input" placeholder="e.g. microring, photonic crystal, CV" type="search"/>
+<div aria-live="polite" class="site-search__results" data-search-results=""></div>
+</section>
+</div>
+<script defer="" src="/assets/js/main.js"></script></body>
+</html>

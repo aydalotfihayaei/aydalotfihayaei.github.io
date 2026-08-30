@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Geometric optimization concept</title><desc id="d">A conceptual radius sweep linked to a response trend, representing systematic geometric parameter optimization.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06162f"/><stop offset="1" stop-color="#0a3765"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18d8ff"/><stop offset="1" stop-color="#5a7cff"/></linearGradient>
+ <linearGradient id="warm" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1ddaff"/><stop offset=".7" stop-color="#7e8bff"/><stop offset="1" stop-color="#ff9d42"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="640" height="360" rx="26" fill="url(#bg)"/>
+<g opacity=".18" stroke="#72c9ff" stroke-width="1"><path d="M0 72H640M0 144H640M0 216H640M0 288H640"/><path d="M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+<g transform="translate(88 86)" fill="none" stroke="url(#warm)" stroke-width="5"><circle cx="70" cy="86" r="34"/><circle cx="158" cy="86" r="39"/><circle cx="246" cy="86" r="44"/><circle cx="334" cy="86" r="49"/><circle cx="422" cy="86" r="54"/></g><path d="M112 270H530" stroke="#7edfff" stroke-width="2"/><g fill="#7edfff"><circle cx="145" cy="270" r="4"/><circle cx="227" cy="270" r="4"/><circle cx="309" cy="270" r="4"/><circle cx="391" cy="270" r="4"/><circle cx="473" cy="270" r="4"/></g><path d="M145 270C210 232 277 250 346 193S447 119 473 128" fill="none" stroke="#29d3ff" stroke-width="4"/><text x="170" y="307" fill="#9bccec" font-family="Inter,Segoe UI,sans-serif" font-size="12">systematic radius sweep → response comparison</text><g font-family="Inter,Segoe UI,sans-serif"><text x="28" y="34" fill="#e8f7ff" font-size="18" font-weight="700">Geometric optimization</text><text x="28" y="334" fill="#88b9d8" font-size="11">Concept schematic — not simulation or measurement data</text></g></svg>

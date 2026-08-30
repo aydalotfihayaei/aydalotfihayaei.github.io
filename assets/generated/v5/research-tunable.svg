@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">Tunable photonics concept</title><desc id="d">A conceptual ring resonator with thermal or MEMS tuning elements and tuning arrows.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06162f"/><stop offset="1" stop-color="#0a3765"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18d8ff"/><stop offset="1" stop-color="#5a7cff"/></linearGradient>
+ <linearGradient id="warm" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1ddaff"/><stop offset=".7" stop-color="#7e8bff"/><stop offset="1" stop-color="#ff9d42"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="640" height="360" rx="26" fill="url(#bg)"/>
+<g opacity=".18" stroke="#72c9ff" stroke-width="1"><path d="M0 72H640M0 144H640M0 216H640M0 288H640"/><path d="M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+<path d="M90 188H550" stroke="#26cfff" stroke-width="11" filter="url(#glow)"/><circle cx="320" cy="188" r="72" fill="none" stroke="url(#warm)" stroke-width="11"/><path d="M250 94C280 70 362 68 392 96" fill="none" stroke="#ff9f43" stroke-width="6"/><path d="M258 82l-12 14 18 4M384 82l15 13-18 5" fill="none" stroke="#ffbd73" stroke-width="3"/><g stroke="#7fe8ff" stroke-width="3"><path d="M275 260v35M320 260v35M365 260v35"/><path d="M263 294h24M308 294h24M353 294h24"/></g><text x="267" y="64" fill="#ffd19a" font-family="Inter,Segoe UI,sans-serif" font-size="12">thermal / MEMS tuning</text><g font-family="Inter,Segoe UI,sans-serif"><text x="28" y="34" fill="#e8f7ff" font-size="18" font-weight="700">Tunable &amp; reconfigurable integrated photonics</text><text x="28" y="334" fill="#88b9d8" font-size="11">Concept schematic — not simulation or measurement data</text></g></svg>

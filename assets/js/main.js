@@ -169,3 +169,29 @@
     document.querySelectorAll('[data-reveal]').forEach((item) => item.classList.add('is-revealed'));
   }
 })();
+
+
+/* Footer-aware floating back-to-top v10 */
+(() => {
+  const floatingTop = document.querySelector('.floating-top');
+  const footer = document.querySelector('.v3-footer');
+
+  if (!floatingTop || !footer) return;
+
+  if ('IntersectionObserver' in window) {
+    const footerObserver = new IntersectionObserver(
+      ([entry]) => {
+        floatingTop.classList.toggle(
+          'is-footer-visible',
+          entry.isIntersecting
+        );
+      },
+      {
+        root: null,
+        threshold: 0.01
+      }
+    );
+
+    footerObserver.observe(footer);
+  }
+})();
